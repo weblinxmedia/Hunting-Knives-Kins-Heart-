@@ -11,26 +11,34 @@ export function BrandStory() {
                             className="font-montserrat text-3xl md:text-4xl lg:text-4xl font-semibold tracking-tight"
                         >
                             Welcome to <span className="text-primary">Kin's Heart</span>
-                        </h2></ScrollReveal>
+                        </h2>
+                    </ScrollReveal>
+                    <ScrollReveal>
+                        <div className="mt-4 font-outfit space-y-2 font-extralight max-w-auto md:max-w-5xl md:text-md leading-relaxed text-white/95">
 
-                    <div className="mt-4 font-outfit space-y-2 font-extralight max-w-auto md:max-w-5xl md:text-md leading-relaxed text-white/95">
-                        <ScrollReveal> <p>
-                            Where craftsmanship meets strength. We specialize in premium
-                            <strong className="font-regular text-primary"> Damascus steel creations</strong>, including
-                            knives, axes, swords, and custom pieces designed for those who demand quality and character.
-                        </p></ScrollReveal>
+                            <p>
+                                Where craftsmanship meets strength. We specialize in premium
+                                <strong className="font-regular text-primary"> Damascus steel creations</strong>, including
+                                knives, axes, swords, and custom pieces designed for those who demand quality and character.
+                            </p>
 
-                        <ScrollReveal><p>
-                            Every item is carefully crafted using traditional forging techniques, delivering exceptional
-                            durability, sharpness, and unique patterns in every blade. Whether for collection, outdoor
-                            use, or <strong className="font-regular text-primary">everyday carry</strong>, our products are
-                            made to perform and built to last.
-                        </p></ScrollReveal>
 
-                        <ScrollReveal><p className="text-white/80">
-                            Serving customers across the USA with reliable quality and distinctive design.
-                        </p></ScrollReveal>
-                    </div>
+
+                            <p>
+                                Every item is carefully crafted using traditional forging techniques, delivering exceptional
+                                durability, sharpness, and unique patterns in every blade. Whether for collection, outdoor
+                                use, or <strong className="font-regular text-primary">everyday carry</strong>, our products are
+                                made to perform and built to last.
+                            </p>
+
+
+
+                            <p>
+                                Serving customers across the USA with reliable quality and distinctive design.
+                            </p>
+
+                        </div>
+                    </ScrollReveal>
                 </div>
             </div>
         </section>
