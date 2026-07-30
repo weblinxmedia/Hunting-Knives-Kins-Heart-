@@ -1,5 +1,6 @@
 import { ShieldCheck, Mountain, Lock, Flag } from 'lucide-react';
 import { FeatureCard } from './FeatureCard';
+import { ScrollReveal } from '@/components/atoms/ScrollReveal';
 
 const features = [
     {
@@ -31,13 +32,14 @@ export function FeaturesBar() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6">
                     {features.map((feature, index) => (
-                        <FeatureCard
-                            key={index}
-                            icon={feature.icon}
-                            title={feature.title}
-                            description={feature.description}
-                        />
-                    ))}
+                        <ScrollReveal key={index} delay={index * 0.1}>
+                            <FeatureCard
+                                key={index}
+                                icon={feature.icon}
+                                title={feature.title}
+                                description={feature.description}
+                            />
+                        </ScrollReveal>))}
                 </div>
             </div>
         </section>

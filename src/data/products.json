@@ -3,24 +3,108 @@
         "id": "prod_1",
         "slug": "trailmaster-fixed-blade",
         "name": "Trailmaster Fixed Blade",
-        "category": "fixed-blade-knives",
-        "price": 12999,
+        "category": "Fixed Blade Knives",
+        "subcategory": "Hunting Knives",
+        "price": 8999,
+        "compareAtPrice": 12999,
         "images": [
-            "/images/trailmaster-1.jpg"
+            "/images/bestsellers/1-1.webp",
+            "/images/bestsellers/1-2.webp"
         ],
         "bladeMaterial": "1095 High Carbon Steel",
-        "description": "A rugged, no-nonsense fixed blade designed for deep woods processing and field dressing."
+        "description": "A rugged, no-nonsense fixed blade designed for deep woods processing and field dressing. Full tang construction ensures it won't fail when you need it most.",
+        "sku": "TFN-TRM-001",
+        "vendor": "Blade & Co.",
+        "isBestSeller": true,
+        "reviews": {
+            "average": 4.8,
+            "count": 13
+        }
     },
     {
         "id": "prod_2",
         "slug": "woodsman-camping-axe",
         "name": "Woodsman Camping Axe",
-        "category": "hunting-axes",
-        "price": 8950,
+        "category": "Axes",
+        "subcategory": "Camping Axes",
+        "price": 7950,
+        "compareAtPrice": 9500,
         "images": [
-            "/images/woodsman-axe-1.jpg"
+            "/images/bestsellers/2-1.webp",
+            "/images/bestsellers/2-2.webp"
         ],
         "bladeMaterial": "Forged 1055 Carbon Steel",
-        "description": "Compact enough for the pack, heavy enough to split kindling and process game."
+        "description": "Compact enough for the pack, heavy enough to split kindling and process game. Hand-sharpened edge bits deep every time.",
+        "sku": "AXE-WDS-002",
+        "vendor": "Blade & Co.",
+        "isBestSeller": true,
+        "reviews": {
+            "average": 3.9,
+            "count": 4
+        }
+    },
+    {
+        "id": "prod_3",
+        "slug": "ridgeback-hunter",
+        "name": "Ridgeback Hunter",
+        "category": "Fixed Blade Knives",
+        "subcategory": "Skinning Knives",
+        "price": 11400,
+        "images": [
+            "/images/bestsellers/3-1.jpg",
+            "/images/bestsellers/3-2.jpg"
+        ],
+        "bladeMaterial": "S30V Stainless Steel",
+        "description": "Designed specifically for caping and skinning. The S30V steel holds a microscopic edge for clean cuts without tearing the hide.",
+        "sku": "TFN-RDB-003",
+        "vendor": "Blade & Co.",
+        "isBestSeller": true,
+        "reviews": {
+            "average": 4.7,
+            "count": 1
+        }
+    },
+    {
+        "id": "prod_4",
+        "slug": "backcountry-hatchet",
+        "name": "Backcountry Hatchet",
+        "category": "Axes",
+        "subcategory": "Hatchets",
+        "price": 6500,
+        "compareAtPrice": 8000,
+        "images": [
+            "/images/bestsellers/4-1.webp",
+            "/images/bestsellers/4-2.webp"
+        ],
+        "bladeMaterial": "1060 Carbon Steel",
+        "description": "The ultimate companion for limb chopping and shelter building. Lightweight but packs a massive punch.",
+        "sku": "AXE-BCK-004",
+        "vendor": "Blade & Co.",
+        "isBestSeller": true,
+        "reviews": {
+            "average": 3.6,
+            "count": 7
+        }
+    },
+    {
+        "id": "prod_5",
+        "slug": "field-dressing-knife",
+        "name": "Field Dressing Knife",
+        "category": "Fixed Blade Knives",
+        "subcategory": "Gut Hooks",
+        "price": 4500,
+        "images": [
+            "/images/bestsellers/5-1.webp",
+            "/images/bestsellers/5-2.jpg"
+        ],
+        "bladeMaterial": "440C Stainless",
+        "description": "An affordable, reliable tool for the occasional hunter. The gut hook opens game cleanly without piercing the intestines.",
+        "sku": "TFN-FLD-005",
+        "vendor": "Blade & Co.",
+        "isBestSeller": true,
+        "reviews": {
+            "average": 4.3,
+            "count": 19
+        }
     }
 ]

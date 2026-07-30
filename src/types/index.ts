@@ -1,17 +1,21 @@
+export interface ProductReview {
+    average: number;
+    count: number;
+}
+
 export interface Product {
     id: string;
     slug: string;
     name: string;
     category: string;
-    price: number; // Store in cents to avoid JS rounding errors (e.g., 12999 = $129.99)
+    subcategory?: string;
+    price: number; // in cents
+    compareAtPrice?: number; // in cents, for sales
     images: string[];
     bladeMaterial: string;
     description: string;
-}
-
-export interface Category {
-    id: string;
-    slug: string;
-    name: string;
-    description: string;
+    sku: string;
+    vendor: string;
+    isBestSeller?: boolean;
+    reviews: ProductReview;
 }
