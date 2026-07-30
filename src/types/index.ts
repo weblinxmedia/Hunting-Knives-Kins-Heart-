@@ -4,6 +4,7 @@ export interface ProductReview {
 }
 
 export interface Product {
+
     id: string;
     slug: string;
     name: string;
@@ -17,5 +18,6 @@ export interface Product {
     sku: string;
     vendor: string;
     isBestSeller?: boolean;
+    isNewArrival?: boolean;
     reviews: ProductReview;
 }
