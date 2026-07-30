@@ -26,7 +26,7 @@ export function DesktopNavigation({
     return (
         <nav
             aria-label="Primary navigation"
-            className="hidden h-20 xl:block"
+            className="hidden min-h-20 xl:block"
         >
             <ul className="flex h-full items-center gap-6 2xl:gap-8">
                 {desktopCategories.map((category) => (
@@ -38,7 +38,7 @@ export function DesktopNavigation({
                 ))}
 
                 {hasAdditionalCategories && (
-                    <li className="flex h-20 items-center">
+                    <li className="flex min-h-20 items-center">
                         <AnimatedNavLink
                             href="/categories"
                             tone={tone}
