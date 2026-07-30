@@ -1,0 +1,29 @@
+[
+    {
+        "id": "ban_1",
+        "image": "/images/hero-banners/hero-1.webp",
+        "title": "Durability That Delivers",
+        "subtitle": "Rugged, full-tang construction engineered to handle heavy use season after season. Built for hunters who demand gear that won't quit.",
+        "buttonText": "Shop Fixed Blades",
+        "link": "/category/fixed-blade-knives",
+        "eyebrow": "Precision-Forged for Every Hunt"
+    },
+    {
+        "id": "ban_2",
+        "image": "/images/hero-banners/hero-2.jpg",
+        "title": "Next Drop Incoming",
+        "subtitle": "New additions to our hunting knife lineup are on the way. Stay tuned for the next drop of premium blades.",
+        "buttonText": "Shop Axes",
+        "link": "/category/hunting-axes",
+        "eyebrow": "The Next Generation of Blades is Almost Here"
+    },
+    {
+        "id": "ban_3",
+        "image": "/images/hero-banners/hero-3.jpg",
+        "title": "Latest Additions",
+        "subtitle": "Fresh off the line — our latest hunting knives combine sharp performance with rugged, field-ready design.",
+        "buttonText": "View What's New",
+        "link": "/category/new-arrivals",
+        "eyebrow": "Freshly Forged, Ready for the Field"
+    }
+]

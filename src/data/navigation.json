@@ -1,0 +1,217 @@
+[
+    {
+        "id": "best-sellers",
+        "name": "Best Sellers",
+        "href": "/category/best-sellers",
+        "subcategories": [
+            {
+                "id": "best-selling-knives",
+                "name": "Hunting Knives",
+                "href": "/category/best-sellers/hunting-knives",
+                "products": [
+                    {
+                        "id": "trailmaster-fixed-blade",
+                        "name": "Trailmaster Fixed Blade",
+                        "href": "/product/trailmaster-fixed-blade"
+                    },
+                    {
+                        "id": "ridgeback-hunter",
+                        "name": "Ridgeback Hunter",
+                        "href": "/product/ridgeback-hunter"
+                    },
+                    {
+                        "id": "field-dressing-knife",
+                        "name": "Field Dressing Knife",
+                        "href": "/product/field-dressing-knife"
+                    },
+                    {
+                        "id": "backcountry-skinner",
+                        "name": "Backcountry Skinner",
+                        "href": "/product/backcountry-skinner"
+                    }
+                ]
+            },
+            {
+                "id": "best-selling-axes",
+                "name": "Hunting Axes",
+                "href": "/category/best-sellers/hunting-axes",
+                "products": [
+                    {
+                        "id": "woodsman-camping-axe",
+                        "name": "Woodsman Camping Axe",
+                        "href": "/product/woodsman-camping-axe"
+                    },
+                    {
+                        "id": "backcountry-hatchet",
+                        "name": "Backcountry Hatchet",
+                        "href": "/product/backcountry-hatchet"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "custom",
+        "name": "Custom",
+        "href": "/category/custom",
+        "subcategories": [
+            {
+                "id": "custom-fixed-blades",
+                "name": "Custom Fixed Blades",
+                "href": "/category/custom/fixed-blades",
+                "products": [
+                    {
+                        "id": "ranger-custom",
+                        "name": "Ranger Custom",
+                        "href": "/product/ranger-custom"
+                    },
+                    {
+                        "id": "custom-skinner",
+                        "name": "Custom Skinner",
+                        "href": "/product/custom-skinner"
+                    }
+                ]
+            },
+            {
+                "id": "custom-handles",
+                "name": "Custom Handles",
+                "href": "/category/custom/handles",
+                "products": [
+                    {
+                        "id": "walnut-handle-knife",
+                        "name": "Walnut Handle Knife",
+                        "href": "/product/walnut-handle-knife"
+                    },
+                    {
+                        "id": "micarta-handle-knife",
+                        "name": "Micarta Handle Knife",
+                        "href": "/product/micarta-handle-knife"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "swords",
+        "name": "Swords",
+        "href": "/category/swords",
+        "subcategories": [
+            {
+                "id": "short-swords",
+                "name": "Short Swords",
+                "href": "/category/swords/short-swords",
+                "products": [
+                    {
+                        "id": "frontier-short-sword",
+                        "name": "Frontier Short Sword",
+                        "href": "/product/frontier-short-sword"
+                    },
+                    {
+                        "id": "carbon-camp-sword",
+                        "name": "Carbon Camp Sword",
+                        "href": "/product/carbon-camp-sword"
+                    }
+                ]
+            },
+            {
+                "id": "machetes",
+                "name": "Machetes",
+                "href": "/category/swords/machetes",
+                "products": [
+                    {
+                        "id": "brush-cutter",
+                        "name": "Brush Cutter",
+                        "href": "/product/brush-cutter"
+                    },
+                    {
+                        "id": "jungle-machete",
+                        "name": "Jungle Machete",
+                        "href": "/product/jungle-machete"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "axes",
+        "name": "Axes",
+        "href": "/category/axes",
+        "subcategories": [
+            {
+                "id": "camping-axes",
+                "name": "Camping Axes",
+                "href": "/category/axes/camping-axes",
+                "products": [
+                    {
+                        "id": "woodsman-camping-axe",
+                        "name": "Woodsman Camping Axe",
+                        "href": "/product/woodsman-camping-axe"
+                    },
+                    {
+                        "id": "pack-hatchet",
+                        "name": "Pack Hatchet",
+                        "href": "/product/pack-hatchet"
+                    }
+                ]
+            },
+            {
+                "id": "splitting-axes",
+                "name": "Splitting Axes",
+                "href": "/category/axes/splitting-axes",
+                "products": [
+                    {
+                        "id": "timber-splitter",
+                        "name": "Timber Splitter",
+                        "href": "/product/timber-splitter"
+                    },
+                    {
+                        "id": "camp-maul",
+                        "name": "Camp Maul",
+                        "href": "/product/camp-maul"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "accessories",
+        "name": "Accessories",
+        "href": "/category/accessories",
+        "subcategories": [
+            {
+                "id": "sheaths",
+                "name": "Sheaths",
+                "href": "/category/accessories/sheaths",
+                "products": [
+                    {
+                        "id": "leather-belt-sheath",
+                        "name": "Leather Belt Sheath",
+                        "href": "/product/leather-belt-sheath"
+                    },
+                    {
+                        "id": "kydex-field-sheath",
+                        "name": "Kydex Field Sheath",
+                        "href": "/product/kydex-field-sheath"
+                    }
+                ]
+            },
+            {
+                "id": "sharpening",
+                "name": "Sharpening",
+                "href": "/category/accessories/sharpening",
+                "products": [
+                    {
+                        "id": "field-sharpener",
+                        "name": "Field Sharpener",
+                        "href": "/product/field-sharpener"
+                    },
+                    {
+                        "id": "whetstone-kit",
+                        "name": "Whetstone Kit",
+                        "href": "/product/whetstone-kit"
+                    }
+                ]
+            }
+        ]
+    }
+]

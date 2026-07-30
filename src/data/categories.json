@@ -1,0 +1,14 @@
+[
+    {
+        "id": "cat_1",
+        "slug": "fixed-blade-knives",
+        "name": "Fixed Blade Knives",
+        "description": "Full tang, no moving parts. Built for hard use in the field."
+    },
+    {
+        "id": "cat_2",
+        "slug": "hunting-axes",
+        "name": "Hunting Axes",
+        "description": "From packing hatchets to splitting mauls, axes you can trust."
+    }
+]

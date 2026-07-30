@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #ff5100;
+  --color-overlay: rgb(0 0 0 / 30%);
+
+  --font-jakarta: var(--font-plus-jakarta-next);
+  --font-montserrat: var(--font-montserrat-next);
+  --font-outfit: var(--font-outfit-next);
+  --font-geist: var(--font-geist-next);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 200vh;
+  font-family: var(--font-plus-jakarta-next), Arial, sans-serif;
+}
+
+body::selection {
+  color: black;
+  background: var(--color-primary);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

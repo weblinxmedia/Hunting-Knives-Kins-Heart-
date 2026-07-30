@@ -1,0 +1,26 @@
+[
+    {
+        "id": "prod_1",
+        "slug": "trailmaster-fixed-blade",
+        "name": "Trailmaster Fixed Blade",
+        "category": "fixed-blade-knives",
+        "price": 12999,
+        "images": [
+            "/images/trailmaster-1.jpg"
+        ],
+        "bladeMaterial": "1095 High Carbon Steel",
+        "description": "A rugged, no-nonsense fixed blade designed for deep woods processing and field dressing."
+    },
+    {
+        "id": "prod_2",
+        "slug": "woodsman-camping-axe",
+        "name": "Woodsman Camping Axe",
+        "category": "hunting-axes",
+        "price": 8950,
+        "images": [
+            "/images/woodsman-axe-1.jpg"
+        ],
+        "bladeMaterial": "Forged 1055 Carbon Steel",
+        "description": "Compact enough for the pack, heavy enough to split kindling and process game."
+    }
+]
