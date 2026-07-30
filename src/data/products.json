@@ -37,6 +37,7 @@
         "description": "Compact enough for the pack, heavy enough to split kindling and process game. Hand-sharpened edge bits deep every time.",
         "sku": "AXE-WDS-002",
         "vendor": "Blade & Co.",
+        "isNewArrival": true,
         "isBestSeller": true,
         "reviews": {
             "average": 3.9,
@@ -80,6 +81,7 @@
         "description": "The ultimate companion for limb chopping and shelter building. Lightweight but packs a massive punch.",
         "sku": "AXE-BCK-004",
         "vendor": "Blade & Co.",
+        "isNewArrival": true,
         "isBestSeller": true,
         "reviews": {
             "average": 3.6,
@@ -105,6 +107,117 @@
         "reviews": {
             "average": 4.3,
             "count": 19
+        }
+    },
+    {
+        "id": "prod_6",
+        "slug": "viper-edc-folder",
+        "name": "Viper EDC Folder",
+        "category": "Folding Knives",
+        "subcategory": "Everyday Carry",
+        "price": 6500,
+        "images": [
+            "/images/newarrivals/1-1.webp",
+            "/images/newarrivals/1-2.webp"
+        ],
+        "bladeMaterial": "VG-10 Stainless",
+        "description": "A sleek, fast-deploying folder perfect for daily pocket carry. G10 handles provide a rock-solid grip.",
+        "sku": "FLD-VPR-006",
+        "vendor": "Blade & Co.",
+        "isNewArrival": true,
+        "reviews": {
+            "average": 4.5,
+            "count": 12
+        }
+    },
+    {
+        "id": "prod_7",
+        "slug": "outfitter-splitting-maul",
+        "name": "Outfitter Splitting Maul",
+        "category": "Axes",
+        "subcategory": "Splitting Axes",
+        "price": 14500,
+        "images": [
+            "/images/newarrivals/2-1.webp",
+            "/images/newarrivals/2-2.webp"
+        ],
+        "bladeMaterial": "Drop Forged Steel",
+        "description": "When you need serious splitting power. The weighted head drives through the toughest hardwoods.",
+        "sku": "AXE-OTF-007",
+        "vendor": "Blade & Co.",
+        "isNewArrival": true,
+        "reviews": {
+            "average": 4.9,
+            "count": 5
+        }
+    },
+    {
+        "id": "prod_8",
+        "slug": "shadow-damascus-bowie",
+        "name": "Shadow Damascus Bowie",
+        "category": "Fixed Blade Knives",
+        "subcategory": "Bowie Knives",
+        "price": 22000,
+        "compareAtPrice": 25000,
+        "images": [
+            "/images/newarrivals/3-1.webp",
+            "/images/newarrivals/3-2.webp"
+        ],
+        "bladeMaterial": "Pattern-Welded Damascus",
+        "description": "A museum-quality piece built for the field. 256-layer Damascus steel with a stabilized burl handle.",
+        "sku": "TFN-SDW-008",
+        "vendor": "Kin's Heart",
+        "isNewArrival": true,
+        "isBestSeller": true,
+        "reviews": {
+            "average": 5.0,
+            "count": 2
+        }
+    },
+    {
+        "id": "prod_8",
+        "slug": "shadow-damascus-bowie",
+        "name": "Shadow Damascus Bowie",
+        "category": "Fixed Blade Knives",
+        "subcategory": "Bowie Knives",
+        "price": 22000,
+        "compareAtPrice": 25000,
+        "images": [
+            "/images/newarrivals/4-1.webp",
+            "/images/newarrivals/4-2.webp"
+        ],
+        "bladeMaterial": "Pattern-Welded Damascus",
+        "description": "A museum-quality piece built for the field. 256-layer Damascus steel with a stabilized burl handle.",
+        "sku": "TFN-SDW-008",
+        "vendor": "Kin's Heart",
+        "isNewArrival": false,
+        "isBestSeller": true,
+        "reviews": {
+            "average": 5.0,
+            "count": 2
+        }
+    },
+    {
+        "id": "prod_8",
+        "slug": "shadow-damascus-bowie",
+        "name": "Shadow Damascus Bowie",
+        "category": "Fixed Blade Knives",
+        "subcategory": "Bowie Knives",
+        "price": 22000,
+        "compareAtPrice": 25000,
+        "images": [
+            "/images/newarrivals/5-1.webp",
+            "/images/newarrivals/5-2.webp"
+        ],
+        "bladeMaterial": "Pattern-Welded Damascus",
+        "description": "A museum-quality piece built for the field. 256-layer Damascus steel with a stabilized burl handle.",
+        "sku": "TFN-SDW-008",
+        "vendor": "Kin's Heart",
+        "isNewArrival": true,
+        "isBestSeller": true,
+        "reviews": {
+            "average": 5.0,
+            "count": 2
         }
     }
 ]

@@ -63,18 +63,18 @@ export function BestSellers() {
 
                 <div
                     ref={scrollRef}
-                    className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
+                    className="flex gap-5 overflow-x-auto flex items-center min-h-[400px] p-0 scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
-                    {bestSellers.map((product, index) => (
-                        <ScrollReveal className="min-w-[280px] w-full sm:min-w-[calc(50%-10px)] lg:min-w-[calc(33.333%-14px)] xl:min-w-[calc(25%-15px)] snap-start" key={product.id} delay={index * 0.07}>
-                            <div
-                                key={product.id}
+                    {bestSellers.map((product) => (
 
-                            >
+                        <div
+                            key={product.id}
+                            className="min-w-[280px] w-full sm:min-w-[calc(50%-10px)] lg:min-w-[calc(33.333%-14px)] xl:min-w-[calc(25%-15px)] snap-start"
+                        ><ScrollReveal delay={0.15}>
                                 <ProductCard product={product} onQuickView={setQuickViewProduct} />
-
-                            </div></ScrollReveal>
+                            </ScrollReveal>
+                        </div>
                     ))}
                 </div>
 

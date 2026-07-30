@@ -58,6 +58,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
                     </div>
                 )}
 
+
                 {/* Sliding Add to Cart Button (Bottom) */}
                 <div className="absolute bottom-0  left-0 right-0 translate-y-full transition-transform duration-300 ease-out group-hover:translate-y-0 group-hover:bottom-2">
                     <button
@@ -84,6 +85,11 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
 
             {/* Card Details */}
             <Link href={`/product/${product.slug}`} className="flex flex-col">
+                {product.isNewArrival && (
+                    <div className="absolute right-3 bottom-0.5 z-10 bg-black px-[1.475rem] py-1 font-montserrat text-xs font-bold text-white">
+                        New
+                    </div>
+                )}
                 <p className="font-outfit text-xs font-normal tracking-normal text-black/50">
                     {product.subcategory || product.category}
                 </p>

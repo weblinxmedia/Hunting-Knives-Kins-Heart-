@@ -4,6 +4,7 @@ import { SubHeader } from "@/components/organisms/SubHeader";
 import { FeaturesBar } from '@/components/organisms/FeaturesBar';
 import { BestSellers } from "@/components/organisms/BestSellers";
 import { BrandStory } from '@/components/organisms/BrandStory';
+import { NewArrivals } from '@/components/organisms/NewArrivals';
 export default function HomePage() {
     return (
         <main>
@@ -17,6 +18,8 @@ export default function HomePage() {
             <FeaturesBar />
             <BestSellers />
             <BrandStory />
+            <NewArrivals />
+
         </main>
     );
 }

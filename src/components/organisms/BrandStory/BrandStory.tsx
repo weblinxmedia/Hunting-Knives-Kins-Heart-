@@ -3,7 +3,7 @@ import { ScrollReveal } from '@/components/atoms/ScrollReveal';
 export function BrandStory() {
     return (
         <section className="bg-black/90" aria-labelledby="brand-story-heading">
-            <div className="mx-auto max-w-[1300px] px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-12 md:py-20">
                 <div className="mx-auto text-start text-white">
                     <ScrollReveal>
                         <h2
