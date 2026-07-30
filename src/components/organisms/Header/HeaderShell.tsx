@@ -22,7 +22,7 @@ export function HeaderShell({
     onSearchOpen,
 }: HeaderShellProps) {
     return (
-        <div className="relative mx-auto max-w-[1200px] px-4 md:px-0 lg:px-0">
+        <div className="relative mx-auto max-w-[1300px] px-4 sm:px-5 lg:px-8">
             <div className="grid min-h-20 grid-cols-[1fr_auto_1fr] py-4 items-center">
                 <div className="flex min-w-0 items-center justify-start">
                     <div className="xl:hidden">

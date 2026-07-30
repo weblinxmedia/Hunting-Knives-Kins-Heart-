@@ -49,7 +49,7 @@ export const HeroCarousel = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -30 }}
-                        className="flex w-[92vw] max-w-[1200px] flex-col md:flex-row justify-center md:justify-between items-center"
+                        className="flex w-[100vw] max-w-[1300px] flex-col md:flex-row justify-center md:justify-between px-4 sm:px-5 lg:px-8 items-center"
                         transition={{ duration: 0.8, ease: smoothEase }}
                     >
                         <div className="w-fit text-center md:text-start select-none self-center md:self-start py-0 mb-10 md:mb-0 md:py-[30px]">

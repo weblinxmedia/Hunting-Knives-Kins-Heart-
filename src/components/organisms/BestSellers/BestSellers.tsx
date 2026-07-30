@@ -27,7 +27,7 @@ export function BestSellers() {
 
     return (
         <section className="py-16 md:py-20">
-            <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-[1300px] px-4 sm:px-5 lg:px-8">
 
                 {/* Header */}
                 <ScrollReveal>
@@ -60,24 +60,24 @@ export function BestSellers() {
                 </ScrollReveal>
 
                 {/* Carousel Container */}
+                <ScrollReveal direction="left" delay={0.1} className="grid">
+                    <div
+                        ref={scrollRef}
+                        className="flex gap-5 overflow-x-auto flex items-center min-h-[400px] p-0 scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
+                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                    >
+                        {bestSellers.map((product) => (
 
-                <div
-                    ref={scrollRef}
-                    className="flex gap-5 overflow-x-auto flex items-center min-h-[400px] p-0 scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
-                    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-                >
-                    {bestSellers.map((product) => (
-
-                        <div
-                            key={product.id}
-                            className="min-w-[280px] w-full sm:min-w-[calc(50%-10px)] lg:min-w-[calc(33.333%-14px)] xl:min-w-[calc(25%-15px)] snap-start"
-                        ><ScrollReveal delay={0.15}>
+                            <div
+                                key={product.id}
+                                className="min-w-[280px] w-full sm:min-w-[calc(50%-10px)] lg:min-w-[calc(33.333%-14px)] xl:min-w-[calc(25%-15px)] snap-start"
+                            >
                                 <ProductCard product={product} onQuickView={setQuickViewProduct} />
-                            </ScrollReveal>
-                        </div>
-                    ))}
-                </div>
 
+                            </div>
+                        ))}
+                    </div>
+                </ScrollReveal>
             </div>
 
             {/* Quick View Modal Portal */}

@@ -28,7 +28,7 @@ export function NewArrivals() {
 
     return (
         <section className="py-16 md:py-20">
-            <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-[1300px] px-4 sm:px-5 lg:px-8">
                 <ScrollReveal>
                     <div className="mb-4 flex items-end justify-between">
 

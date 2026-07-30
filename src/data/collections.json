@@ -1,0 +1,40 @@
+[
+    {
+        "id": "coll_1",
+        "title": "Hunting Knives",
+        "categoryName": "Fixed Blade Knives",
+        "categorySlug": "/category/fixed-blade-knives",
+        "featuredProductId": "prod_1",
+        "textImage": "/images/collections/1-1.webp",
+        "image": "/images/collections/1-2.webp",
+        "layout": "30-70"
+    },
+    {
+        "id": "coll_2",
+        "title": "Premium Axes",
+        "categoryName": "Axes",
+        "categorySlug": "/category/axes",
+        "featuredProductId": "prod_2",
+        "image": "/images/collections/2-1.webp",
+        "layout": "100"
+    },
+    {
+        "id": "coll_3",
+        "title": "Custom Damascus",
+        "categoryName": "Custom",
+        "categorySlug": "/category/custom",
+        "featuredProductId": "prod_8",
+        "textImage": "/images/collections/3-2.webp",
+        "image": "/images/collections/3-1.webp",
+        "layout": "70-30"
+    },
+    {
+        "id": "coll_4",
+        "title": "Outdoor Essentials",
+        "categoryName": "Accessories",
+        "categorySlug": "/category/accessories",
+        "featuredProductId": "prod_6",
+        "image": "/images/collections/4-1.webp",
+        "layout": "100"
+    }
+]
