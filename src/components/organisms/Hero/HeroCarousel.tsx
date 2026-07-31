@@ -9,12 +9,12 @@ import Link from 'next/link';
 export const HeroCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentIndex((prev) => (prev + 1) % banners.length);
-    //     }, 5000);
-    //     return () => clearInterval(interval);
-    // }, []);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % banners.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
 
     const smoothEase = [0.25, 0.1, 0.25, 1] as const;
 
