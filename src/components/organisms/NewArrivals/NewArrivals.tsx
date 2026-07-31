@@ -16,11 +16,11 @@ export function NewArrivals() {
 
     const newArrivals = productsData.filter((p) => p.isNewArrival) as Product[];
 
-    const scroll = (direction: "left" | "right") => {
+    const scroll = (direction: "up" | "up") => {
         if (scrollRef.current) {
             const scrollAmount = scrollRef.current.clientWidth * 0.75;
             scrollRef.current.scrollBy({
-                left: direction === "left" ? -scrollAmount : scrollAmount,
+                left: direction === "up" ? -scrollAmount : scrollAmount,
                 behavior: "smooth",
             });
         }
@@ -43,13 +43,13 @@ export function NewArrivals() {
 
                         <div className="hidden sm:flex items-center gap-2">
                             <button
-                                onClick={() => scroll("left")}
+                                onClick={() => scroll("up")}
                                 className="flex h-11 w-11 items-center justify-center border border-black/15 text-black transition-colors hover:border-primary hover:text-primary"
                             >
                                 <ChevronLeft size={20} />
                             </button>
                             <button
-                                onClick={() => scroll("right")}
+                                onClick={() => scroll("up")}
                                 className="flex h-11 w-11 items-center justify-center border border-black/15 text-black transition-colors hover:border-primary hover:text-primary"
                             >
                                 <ChevronRight size={20} />
@@ -61,7 +61,7 @@ export function NewArrivals() {
                 <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_2fr] gap-6 lg:gap-8">
 
                     {/* Left Column: Promo Banner */}
-                    <ScrollReveal direction="left">
+                    <ScrollReveal direction="up">
                         <PromoBannerCard />
                     </ScrollReveal>
 
@@ -72,7 +72,7 @@ export function NewArrivals() {
 
 
                         {/* Carousel Container */}
-                        <ScrollReveal direction="right" delay={0.1} className="grid">
+                        <ScrollReveal direction="up" delay={0.1} className="grid">
                             <div
                                 ref={scrollRef}
                                 className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4 h-full items-stretch"
