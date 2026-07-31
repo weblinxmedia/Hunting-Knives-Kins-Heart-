@@ -30,3 +30,9 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+@media screen and (max-width:600px) {
+  .pd-rmv_301 {
+    padding: 0px 0px 40px !important;
+  }
+}

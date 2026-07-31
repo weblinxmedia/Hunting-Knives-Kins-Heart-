@@ -6,21 +6,23 @@ import { BestSellers } from "@/components/organisms/BestSellers";
 import { BrandStory } from '@/components/organisms/BrandStory';
 import { NewArrivals } from '@/components/organisms/NewArrivals';
 import { CategoryShowcase } from '@/components/organisms/CategoryShowcase';
+import { TrustCards } from '@/components/organisms/TrustCards';
+import { RecommendedForYou } from '@/components/organisms/RecommendedForYou';
 export default function HomePage() {
     return (
         <main>
             <SubHeader />
-
             <div className="relative">
                 <Header />
                 <HeroCarousel />
             </div>
-
             <FeaturesBar />
             <BestSellers />
             <BrandStory />
             <NewArrivals />
             <CategoryShowcase />
+            <TrustCards />
+            <RecommendedForYou />
         </main>
     );
 }
