@@ -121,7 +121,7 @@ export function CollectionCard({
 
 
             <ScrollReveal
-                direction={isImageLeft ? "right" : "left"}
+                direction={'up'}
                 className={`relative flex flex-col justify-center p-2 md:p-4 lg:p-4 overflow-hidden ${isImageLeft ? "lg:order-2" : "lg:order-1"
                     }`}
             >
@@ -146,7 +146,7 @@ export function CollectionCard({
             </ScrollReveal>
 
             <ScrollReveal
-                direction={isImageLeft ? "left" : "right"}
+                direction={'up'}
                 className={`relative overflow-hidden bg-black/5 ${isImageLeft ? "lg:order-1" : "lg:order-2"
                     }`}
             >
