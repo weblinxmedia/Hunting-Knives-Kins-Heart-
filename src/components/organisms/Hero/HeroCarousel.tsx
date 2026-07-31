@@ -9,12 +9,12 @@ import Link from 'next/link';
 export const HeroCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % banners.length);
-        }, 5000);
-        return () => clearInterval(interval);
-    }, []);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentIndex((prev) => (prev + 1) % banners.length);
+    //     }, 5000);
+    //     return () => clearInterval(interval);
+    // }, []);
 
     const smoothEase = [0.25, 0.1, 0.25, 1] as const;
 
@@ -38,11 +38,11 @@ export const HeroCarousel = () => {
                         className="absolute inset-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${banner.image})` }}
                     />
-                    <div className="absolute inset-0 bg-[#000000C2]" />
+                    <div className="absolute inset-0 bg-[#000000a1]" />
                 </motion.div>
             ))}
 
-            <div className="relative h-fit w-[calc(100%-100px] self-center md:self-end pb-[1%] mx-auto  flex flex-col items-center justify-between text-center px-4 z-10">
+            <div className="relative h-fit w-[calc(100%-100px] self-end md:self-end sm:mt-auto md:pb-[1%] mx-auto flex flex-col items-center justify-between text-center p-0 md:px-4 z-10" style={{ marginBottom: '40px' }}>
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={banners[currentIndex].id}
@@ -52,9 +52,9 @@ export const HeroCarousel = () => {
                         className="flex w-[100vw] max-w-[1300px] flex-col md:flex-row justify-center md:justify-between px-4 sm:px-5 lg:px-8 items-center"
                         transition={{ duration: 0.8, ease: smoothEase }}
                     >
-                        <div className="w-fit text-center md:text-start select-none self-center md:self-start py-0 mb-10 md:mb-0 md:py-[30px]">
+                        <div className="w-fit text-center md:text-start select-none self-center md:self-start py-0 mb-3 md:mb-0 md:py-[30px]">
                             <span className="text-sm text-primary font-outfit pl-1.5">— {banners[currentIndex].eyebrow}</span>
-                            <h1 className="text-4xl md:text-6xl font-montserrat font-bold tracking-[-1px] text-white drop-shadow-lg">
+                            <h1 className="text-3xl md:text-6xl font-montserrat font-bold tracking-[-1px] text-white drop-shadow-lg">
                                 {banners[currentIndex].title}
                             </h1>
                             <p className="text-[14px] font-outfit text-[#CFCFCF] mt-0.5 drop-shadow-md pl-1.5 max-w-xl " style={{ fontWeight: '300' }}>
@@ -68,12 +68,12 @@ export const HeroCarousel = () => {
                 </AnimatePresence>
             </div>
 
-            <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-10">
+            <div className="absolute right-[50%] md:right-6 bottom-6 md:top-1/2 translate-x-1/2 md:-translate-x-1/2 flex flex-row md:flex-col gap-3 z-10">
                 {banners.map((_, idx) => (
                     <button
                         key={idx}
                         onClick={() => setCurrentIndex(idx)}
-                        className={`w-[0.14em] rounded-full h-8 transition-all duration-300 ${idx === currentIndex ? 'bg-primary scale-y-125' : 'bg-white/50'
+                        className={`w-8 md:w-[0.14em] rounded-full h-[0.14em] md:h-8 transition-all duration-300 ${idx === currentIndex ? 'bg-primary scale-y-125' : 'bg-white/50'
                             }`}
                     />
                 ))}

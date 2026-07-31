@@ -60,7 +60,7 @@ export function BestSellers() {
                 </ScrollReveal>
 
                 {/* Carousel Container */}
-                <ScrollReveal direction="left" delay={0.1} className="grid">
+                <ScrollReveal direction="up" delay={0.1} className="grid">
                     <div
                         ref={scrollRef}
                         className="flex gap-5 overflow-x-auto flex items-center min-h-[400px] p-0 scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
