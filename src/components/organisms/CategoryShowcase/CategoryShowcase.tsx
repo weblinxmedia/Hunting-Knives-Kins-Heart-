@@ -6,7 +6,7 @@ import type { Product } from "@/types";
 export function CategoryShowcase() {
     return (
         <section className="pb-16 md:pb-20 bg-white">
-            <div className="flex flex-col gap-5 max-w-[1300px] px-4 sm:px-5 lg:px-8 mx-auto md:gap-5">
+            <div className="flex flex-col gap-3 max-w-[1300px] px-4 sm:px-5 lg:px-8 mx-auto md:gap-2">
                 {collectionsData.map((collection) => {
                     // Find the featured product data
                     const featuredProduct = productsData.find(
