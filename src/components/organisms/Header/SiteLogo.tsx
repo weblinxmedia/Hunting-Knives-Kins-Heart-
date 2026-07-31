@@ -21,7 +21,7 @@ export function SiteLogo({
             onClick={onClick}
             className={cn(
                 "whitespace-nowrap font-outfit text-xl font-bold",
-                "uppercase tracking-[0.18em] transition-colors duration-300",
+                "uppercase tracking-[0.18em] transition-colors transition duration-300",
                 tone === "light" ? "text-white" : "text-black",
             )}
         >

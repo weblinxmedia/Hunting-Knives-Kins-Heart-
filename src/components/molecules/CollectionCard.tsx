@@ -67,7 +67,7 @@ export function CollectionCard({
     if (layout === "100") {
         return (
             <ScrollReveal direction="up">
-                <div className="relative min-h-[95vh] h-full w-full flex items-end justify-end overflow-hidden group">
+                <div className="relative min-h-auto md:min-h-[95vh] h-auto md:h-full w-full flex items-end justify-end overflow-hidden group">
 
                     <Image
                         src={image}

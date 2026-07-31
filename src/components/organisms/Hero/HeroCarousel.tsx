@@ -42,7 +42,7 @@ export const HeroCarousel = () => {
                 </motion.div>
             ))}
 
-            <div className="relative h-fit w-[calc(100%-100px] self-center  md:self-end pb-[1%] mx-auto  flex flex-col items-center justify-between text-center px-4 z-10">
+            <div className="relative h-fit w-[calc(100%-100px] self-center md:self-end pb-[1%] mx-auto  flex flex-col items-center justify-between text-center px-4 z-10">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={banners[currentIndex].id}
