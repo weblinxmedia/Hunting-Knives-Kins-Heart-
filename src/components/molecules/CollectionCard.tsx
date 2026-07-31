@@ -29,12 +29,11 @@ export function CollectionCard({
     layout,
 }: CollectionCardProps) {
 
-    // Shared UI elements so we don't repeat code
     const ProductInfo = () => (
-        <div className="mt-6 space-y-4">
-            <div className="flex items-baseline gap-3">
-                <span className="font-jakarta text-xl font-semibold text-white/80">
-                    {featuredProduct.name}
+        <div className="mt-6 space-y-2 bg-white rounded-3xl p-5">
+            <div className="flex items-baseline gap-2">
+                <span className="font-montserrat text-md font-semibold text-black/80">
+                    {featuredProduct.name} :
                 </span>
                 <span className="font-jakarta text-lg font-bold text-primary">
                     {formatCurrency(featuredProduct.price)}
@@ -43,12 +42,12 @@ export function CollectionCard({
 
             <Link
                 href={categorySlug}
-                className="inline-flex items-center gap-2 font-montserrat text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:text-primary group"
+                className="inline-flex items-center gap-2 font-montserrat text-sm font-semibold uppercase tracking-normal text-primary transition-colors hover:text-primary group"
             >
-                <span className="border-b border-white group-hover:border-primary pb-0.5">
+                <span className="border-b border-primary group-hover:border-primary pb-0.5">
                     {totalProductsInCategory} options available
                 </span>
-                <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
             </Link>
         </div>
     );
@@ -64,35 +63,29 @@ export function CollectionCard({
         </div>
     );
 
-    // ==========================================
-    // 100% FULL WIDTH LAYOUT
-    // ==========================================
+
     if (layout === "100") {
         return (
             <ScrollReveal direction="up">
-                <div className="relative min-h-[95vh] w-full overflow-hidden group">
-                    {/* Background Image */}
+                <div className="relative min-h-[95vh] h-full w-full flex items-end justify-end overflow-hidden group">
+
                     <Image
                         src={image}
                         alt={title}
                         fill
+                        quality={100}
                         sizes="100vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
 
-                    {/* Dark Gradient Overlay for text readability */}
-                    {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" /> */}
+                    <div className="relative z-10 flex h-full flex-col justify-end p-10 md:p-11 lg:p-11">
 
-                    {/* Text Content Overlay */}
-                    <div className="relative z-10 flex h-full flex-col justify-end p-10 md:p-16 lg:p-24 max-w-2xl">
-                        <h2 className="font-jakarta text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                            {title}
-                        </h2>
 
-                        <div className="mt-6 space-y-4">
-                            <div className="flex items-baseline gap-3">
-                                <span className="font-jakarta text-xl font-semibold text-white/90">
-                                    {featuredProduct.name}
+                        <div className="mt-6 space-y-2 bg-white rounded-3xl p-5">
+
+                            <div className="flex items-baseline gap-2">
+                                <span className="font-montserrat text-md font-semibold text-black/80">
+                                    {featuredProduct.name} :
                                 </span>
                                 <span className="font-jakarta text-lg font-bold text-primary">
                                     {formatCurrency(featuredProduct.price)}
@@ -101,32 +94,23 @@ export function CollectionCard({
 
                             <Link
                                 href={categorySlug}
-                                className="inline-flex items-center gap-2 font-montserrat text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:text-primary group"
+                                className="inline-flex items-center gap-2 font-montserrat text-sm font-semibold uppercase tracking-wider text-primary transition-colors hover:text-primary group"
                             >
-                                <span className="border-b border-white group-hover:border-primary pb-0.5">
+                                <span className="border-b border-primary group-hover:border-primary pb-0.5">
                                     {totalProductsInCategory} options available
                                 </span>
-                                <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                                <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                             </Link>
                         </div>
 
-                        <div className="mt-10">
-                            <Link
-                                href={categorySlug}
-                                className="inline-flex items-center justify-center bg-white px-8 py-4 font-montserrat text-xs font-semibold uppercase tracking-wider text-black transition-colors hover:bg-primary hover:text-white"
-                            >
-                                Shop Now
-                            </Link>
-                        </div>
+
                     </div>
                 </div>
             </ScrollReveal>
         );
     }
 
-    // ==========================================
-    // SPLIT LAYOUTS (70-30 & 30-70)
-    // ==========================================
+
     const isImageLeft = layout === "70-30";
     const gridClass = layout === "70-30"
         ? "lg:grid-cols-[70fr_30fr]"
@@ -138,12 +122,12 @@ export function CollectionCard({
 
             <ScrollReveal
                 direction={isImageLeft ? "right" : "left"}
-                className={`relative flex flex-col justify-center p-8 md:p-12 lg:p-16 overflow-hidden ${isImageLeft ? "lg:order-2" : "lg:order-1"
+                className={`relative flex flex-col justify-center p-2 md:p-4 lg:p-4 overflow-hidden ${isImageLeft ? "lg:order-2" : "lg:order-1"
                     }`}
             >
-                {/* BG Image for Text Side */}
+
                 <Image
-                    src={textImage} // Uses the same image as the main side
+                    src={textImage}
                     alt={`${title} background`}
                     fill
                     quality={100}
@@ -151,21 +135,16 @@ export function CollectionCard({
                     className="object-cover"
                 />
 
-                {/* Dark Overlay for readability */}
-                {/* <div className="absolute inset-0 bg-black/60" /> */}
-
-                {/* Content pushed above the overlay */}
-                <div className="relative z-10">
-                    <h2 className="font-jakarta text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                <div className="relative h-full flex flex-col justify-between py-4 z-10">
+                    <h2 className="font-jakarta opacity-0 text-3xl md:text-3xl lg:text-3xl font-bold text-white bg-primary p-2 rounded-xl leading-tight">
                         {title}
                     </h2>
 
                     <ProductInfo />
-                    <CTAButton />
+
                 </div>
             </ScrollReveal>
 
-            {/* Image Section */}
             <ScrollReveal
                 direction={isImageLeft ? "left" : "right"}
                 className={`relative overflow-hidden bg-black/5 ${isImageLeft ? "lg:order-1" : "lg:order-2"
@@ -180,6 +159,14 @@ export function CollectionCard({
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover transition-transform duration-700 hover:scale-101"
                     />
+                    <div className="mt-10 absolute bottom-6 right-5">
+                        <Link
+                            href={categorySlug}
+                            className="inline-flex items-center justify-center  px-8 py-4 font-montserrat text-xs font-semibold uppercase tracking-wider text-black transition-colors border-1 border-primary bg-primary hover:border-1 hover:border-primary hover:bg-transparent hover:text-primary"
+                        >
+                            Shop Now
+                        </Link>
+                    </div>
                 </div>
             </ScrollReveal>
 
